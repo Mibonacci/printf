@@ -1,10 +1,12 @@
 #include"main.h"
 
 
-int main() {
+int main()
+{
     char ch = 'A';
     char *str = "Hello";
     
+    // Example usage
     int printed = my_printf("Character: %c, String: %s, Percent: %%\n", ch, str);
 
     // Output the number of characters printed

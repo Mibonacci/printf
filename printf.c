@@ -4,11 +4,11 @@ int my_printf(const char *format, ...) {
     va_list args;
     va_start(args, format);
 
-    int count = 0;
+    int count = 0;  // To keep track of the number of characters printed
 
     while (*format) {
         if (*format == '%') {
-            format++;
+            format++;  // Move past '%'
             switch (*format) {
                 case 'c': {
                     char ch = (char)va_arg(args, int);
@@ -31,6 +31,7 @@ int my_printf(const char *format, ...) {
                     break;
                 }
                 default:
+                    // Ignore unsupported format specifier
                     break;
             }
         } else {
