@@ -1,6 +1,4 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdarg.h>
+#include"main.h"
 
 int my_printf(const char *format, ...) {
     va_list args;
@@ -45,16 +43,4 @@ int my_printf(const char *format, ...) {
     va_end(args);
 
     return count;
-}
-
-int main() {
-    char ch = 'A';
-    char *str = "Hello";
-    
-    int printed = my_printf("Character: %c, String: %s, Percent: %%\n", ch, str);
-
-    // Output the number of characters printed
-    my_printf("Number of characters printed: %d\n", printed);
-
-    return 0;
 }
