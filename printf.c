@@ -2,16 +2,15 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-// Custom simplified printf function
 int my_printf(const char *format, ...) {
     va_list args;
     va_start(args, format);
 
-    int count = 0;  // To keep track of the number of characters printed
+    int count = 0;
 
     while (*format) {
         if (*format == '%') {
-            format++;  // Move past '%'
+            format++;
             switch (*format) {
                 case 'c': {
                     char ch = (char)va_arg(args, int);
@@ -34,7 +33,6 @@ int my_printf(const char *format, ...) {
                     break;
                 }
                 default:
-                    // Ignore unsupported format specifier
                     break;
             }
         } else {
@@ -53,7 +51,6 @@ int main() {
     char ch = 'A';
     char *str = "Hello";
     
-    // Example usage
     int printed = my_printf("Character: %c, String: %s, Percent: %%\n", ch, str);
 
     // Output the number of characters printed
