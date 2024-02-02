@@ -1,0 +1,19 @@
+
+    {
+        "version": "0.2.0",
+        "configurations": [
+          {
+            "name": "C Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/printf",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/MinGW/bin/"
+          }
+        ]
+      }
