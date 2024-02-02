@@ -64,9 +64,9 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 }
 
 /**
- * isdigit - check if a char is a digit
+ * isdigitt - check if a char is a digit
  */
-int isdigit(char c)
+int isdigitt(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
@@ -151,7 +151,7 @@ char buffer[],
 //useful functions
 int isprintable(char);
 int append_hexa_code(char, char[], int);
-int isdigit(char);
+int isdigitt(char);
 
 long int numbersizeconvert(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);

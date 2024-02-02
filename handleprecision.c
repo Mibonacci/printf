@@ -15,7 +15,7 @@ int handleprecision(const char *format, int *i, va_list list)
 
 	for (curr_i += 1; format[curr_i] != '\0'; curr_i++)
 	{
-		if (isdigit(format[curr_i]))
+		if (isdigitt(format[curr_i]))
 		{
 			precision *= 10;
 			precision += format[curr_i] - '0';

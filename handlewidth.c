@@ -10,7 +10,7 @@ int handlewidth(const char *format, int *i, va_list list)
 
 	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
 	{
-		if (isdigit(format[curr_i]))
+		if (isdigitt(format[curr_i]))
 		{
 			width *= 10;
 			width += format[curr_i] - '0';
